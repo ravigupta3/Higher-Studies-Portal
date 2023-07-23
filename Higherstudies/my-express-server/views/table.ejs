@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medical Science</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="images/studyPortal.webp">
+        <link rel="icon" href="images/logo.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="course1.css">
+ 
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="course1.css"> -->
+
+
+     
+     
+      
+            
+            <section>
+                <nav class="navbar">
+                    <img src="images/studyPortal.webp" height="50px" width="150px"/> 
+                    <div  class="nav-links">
+                        <ul>
+                            <li><a href="2.html"></i>HOME</a></li>
+                            <li><a href="#about"></i>ABOUT</a></li>
+                         <li><a href="COURSES.html">COURSE</a></li>
+                         <li><a href="login_page.html">LOGIN</a></li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+			
+<!-- ------------------- -->
+
+<style>
+    th{ 
+        color:#fff;
+            }
+    button{
+  transition-duration: 0.4s;
+  border-radius: 6px;
+  /*background-color: #008CBA;*/
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  transform: scale(1.13)
+}
+</style>
+
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>College</th>
+        <th>Anual Fees</th>
+        <th>Year of Estabilishment</th>
+        <th></th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+	    {'college_name':'Yale University', 'fees':'$10090', 'year':'1985','button':'REGISTRATION'},
+	    {'college_name':'Imperical College', 'fees':'$90900', 'year':'1988','button':'REGISTRATION'},
+	    {'college_name':'University of Pennsylvania', 'fees':'$91900', 'year':'1982','button':'REGISTRATION'},
+	    {'college_name':'Duke University', 'fees':'$10020', 'year':'1990','button':'REGISTRATION'},
+	    {'college_name':'Cornell University', 'fees':'$91900', 'year':'1997','button':'REGISTRATION'},
+	    {'college_name':'University of Toronto', 'fees':'$10090', 'year':'1998','button':'REGISTRATION'},
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							
+							<td>${data[i].college_name}</td>
+							<td>${data[i].fees}</td>
+							<td>${data[i].year} </td>
+							<td><button><a href="registration_form.html" target="_blank">${data[i].button}</a></button></td>
+							
+						
+							
+						
+							
+							
+						
+					  </tr>`
+
+			table.innerHTML += row
+
+
+
+		}
+	}
+
+</script>
+<section class="footer">
+                <div class="footer">
+                    <p>for further information and enqiery visit our social handles </p>
+                    <ul id="socials">
+                        <li><a class="facebook" href="https://www.facebook.com/AmritaUniversity/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/amritaedu?lang=en"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="google"href="https://www.amrita.edu/"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a class="youtube"href="https://www.youtube.com/user/AmritaUniversity"><i class="fa fa-youtube"></i></a></li>
+                        <li><a class="instagram"href="https://www.instagram.com/amrita_university/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                    </ul>       
+                </div>
+            </section>
+</body>
+</html>

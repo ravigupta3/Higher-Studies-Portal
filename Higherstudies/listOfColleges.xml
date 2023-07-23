@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tst.xsl"?>
+
+<catalog>
+  <cd>
+    <title>Yale University</title>
+    <country>USA</country>
+    <price>10090</price>
+    <year>1985</year>
+  </cd>
+  <cd>
+    <title>Imperial College London</title>
+    <country>UK</country>
+    <price>11290</price>
+    <year>1988</year>
+  </cd>
+  <cd>
+    <title>University of Pennsylvania</title>
+    <country>USA</country>
+    <price>91090</price>
+    <year>1982</year>
+  </cd>
+  <cd>
+    <title>Duke University</title>
+    <country>UK</country>
+    <price>10020</price>
+    <year>1990</year>
+  </cd>
+  <cd>
+    <title>Cornell University</title>
+    <country>EU</country>
+    <price>91190</price>
+    <year>1997</year>
+  </cd>
+  <cd>
+    <title>University of Toronto</title>
+    <country>UK</country>
+    <price>10090</price>
+    <year>1998</year>
+  </cd>
+  <cd>
+    <title>Northwestern University</title>
+    <country>UK</country>
+    <price>82010</price>
+    <year>1973</year>
+  </cd>
+  <cd>
+    <title>New York University</title>
+    <country>UK</country>
+    <price>80350</price>
+    <year>1990</year>
+  </cd>
+  <cd>
+    <title>University of Washington</title>
+    <country>EU</country>
+    <price>10080</price>
+    <year>1996</year>
+  </cd>
+  <cd>
+    <title>Georgia Institute of Technology</title>
+    <country>USA</country>
+    <price>80370</price>
+    <year>1987</year>
+  </cd>
+  <cd>
+    <title>University of Hong Kong</title>
+    <country>EU</country>
+    <price>10190</price>
+    <year>1995</year>
+  </cd>
+  <cd>
+    <title>King’s College London</title>
+    <country>USA</country>
+    <price>10120</price>
+    <year>1999</year>
+  </cd>
+  <cd>
+    <title>The University of Tokyo</title>
+    <country>UK</country>
+    <price>83370</price>
+    <year>1995</year>
+  </cd>
+  <cd>
+    <title>Australian National University</title>
+    <country>USA</country>
+    <price>91890</price>
+    <year>1997</year>
+  </cd>
+  <cd>
+    <title>University of Sydney</title>
+    <country>UK</country>
+    <price>81620</price>
+    <year>1971</year>
+  </cd>
+  <cd>
+    <title>Ohio State University</title>
+    <country>Norway</country>
+    <price>73990</price>
+    <year>1996</year>
+  </cd>
+  <cd>
+    <title>Boston University</title>
+    <country>UK</country>
+    <price>82190</price>
+    <year>1990</year>
+  </cd>
+  <cd>
+    <title>Michigan State University</title>
+    <country>UK</country>
+    <price>81690</price>
+    <year>1988</year>
+  </cd>
+  <cd>
+    <title>University of California, Irvine</title>
+    <country>UK</country>
+    <price>71190</price>
+    <year>1987</year>
+  </cd>
+  <cd>
+    <title>UNSW Sydney</title>
+    <country>UK</country>
+    <price>81390</price>
+    <year>1983</year>
+  </cd>
+  <cd>
+    <title>Seoul National University</title>
+    <country>EU</country>
+    <price>73580</price>
+    <year>1983</year>
+  </cd>
+  <cd>
+    <title>University of California, Davis</title>
+    <country>UK</country>
+    <price>91090</price>
+    <year>1991</year>
+  </cd>
+  <cd>
+    <title>Washington University in St Louis</title>
+    <country>USA</country>
+    <price>72190</price>
+    <year>1968</year>
+  </cd>
+  <cd>
+    <title>University of California</title>
+    <country>EU</country>
+    <price>71220</price>
+    <year>1985</year>
+  </cd>
+ 
+</catalog>
+
+

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" 
+   href="ex.xsl"?>
+<!DOCTYPE list-of-programs SYSTEM "http://people.cc.ku.edu/~grobe/history/prog-list.dtd">
+<list-of-programs xmlns:HTML="http://www.w3.org/Profiles/XHTML-transitional">
+
+    <application>
+        <app_name>Course Catalog</app_name>
+        <description>searches an online version of the 1996 Undergraduate Course Catalog. 
+Cloned for 1998 and 2000 editions of the catalog.
+</description>
+        <url>http://lark.cc.ukans.edu/cgiwrap/catalog/lookup-course96.pl</url>
+        <language>Perl</language>
+        <date_of_origin>1997</date_of_origin>
+    </application>
+
+    <application>
+        <app_name>Parallel CPU Use</app_name>
+        <description>
+shows current activity on each CPU within the KU supercomputer in
+an easy-to-read form.
+</description>
+        <language>Perl</language>
+        <url>http://heron.cc.ukans.edu/cgi-bin/cpu-use.pl</url>
+        <date_of_origin>1997</date_of_origin>
+    </application>
+
+    <application>
+        <app_name>Netometer</app_name>
+        <description>
+evaluates the current status of KU connectivity to the Internet using
+multiple pings to multiple sites located around the country.
+</description>
+        <language>Perl</language>
+        <url>http://lark.cc.ukans.edu/cgiwrap/grobe/netometer.pl</url>
+        <date_of_origin>1996</date_of_origin>
+    </application>
+
+    <application>
+        <app_name>Document Archive Management System (DAMS)</app_name>
+        <description>implements a document database allowing web document 
+construction and editing entirely via the web itself, the Document 
+Archive Management System (note the clever reuse of acronym).
+</description>
+        <language>Perl</language>
+        <url>http://raven.cc.ku.edu/~dams</url>
+        <date_of_origin>1997</date_of_origin>
+    </application>
+
+    <application>
+        <app_name>Calculet</app_name>
+        <description>implements a simple calculator in Java2.
+A state machine is used to organize responses to GUI button input.
+</description>
+        <language>Java</language>
+        <url>http://condor.cc.ku.edu/~grobe/calculet</url>
+        <date_of_origin>2001</date_of_origin>
+    </application>
+
+    <application>
+        <app_name>MyKU</app_name>
+        <description>
+allowed KU users to build customized views of online resources related
+to KU and/or useful in their work at KU.   (design only)
+</description>
+        <language>PHP</language>
+        <url>http://www.ku.edu/~myku</url>
+        <date_of_origin>1999</date_of_origin>
+    </application>
+
+    <application>
+        <app_name>StereoBounce</app_name>
+        <description>
+            shows two stereo windows containing bouncing balls.
+Designed to simplify alignment of stereo projectors. </description>
+        <language>Java</language>
+        <url>http://condor.cc.ku.edu/~grobe/StereoBouncexyz/StereoBouncexyz.java</url>
+        <date_of_origin>2000</date_of_origin>
+    </application>
+</list-of-programs>

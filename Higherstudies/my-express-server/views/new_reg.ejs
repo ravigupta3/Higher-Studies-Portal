@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Registaration Form</title>
+    <link rel="shortcut icon" href="images/studyPortal.webp" />
+
+    <link rel="stylesheet" href="/responsiveRegistration.css" />
+    <script
+      type="text/javascript"
+      lang="javascript"
+      src="/responsiveRegistaration.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div class="newReg" ng-app="">
+      <form method="POST" id="registration" action="/newreg" >
+        <div class="container">
+          <h1>Fill in the form</h1>
+          <div class="row">
+            <div class="col-10">
+              <label for="fname">First Name:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Enter your first name"
+                ng-model="newReg.firstname"
+                ng-required="true"
+              />
+              <div
+                ng-show="newForm.firstname.$touched && newForm.firstname.$invalid"
+              >
+                <small style="color: red; display: block; text-align: start"
+                  >Enter First name</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="lname">Last Name:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Enter your last name"
+                ng-model="newReg.lastname"
+                ng-required="true"
+              />
+              <div
+                ng-show="newForm.lastname.$touched && newForm.lastname.$invalid"
+              >
+                <small style="color: red; display: block; text-align: start"
+                  >Enter Last name</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="email">Email:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="it should contain @,."
+                ng-model="newReg.email"
+                ng-required="true"
+              />
+              <div ng-show="newForm.email.$touched && newForm.email.$invalid">
+                <small style="color: red; display: block; text-align: start"
+                  >Enter valid Email ID</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="mobile">Mobile:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="number"
+                id="mobile"
+                name="mobile"
+                placeholder="only 10 digits are allowed"
+                maxlength="10"
+                ng-model="newReg.mobile"
+                ng-required="true"
+              />
+              <div ng-show="newForm.mobile.$touched && newForm.mobile.$invalid">
+                <small style="color: red; display: block; text-align: start"
+                  >Enter Mobile number</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="gender" required>Gender:</label>
+            </div>
+            <div class="input-box">
+              <input type="radio" id="male" name="gender" value="male" />Male
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+              />Female
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="dob">Date Of Birth:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="Date"
+                id="dob"
+                name="dob"
+                ng-model="newReg.dob"
+                ng-required="true"
+              />
+              <div ng-show="newForm.dob.$touched && newForm.dob.$invalid">
+                <small style="color: red; display: block; text-align: start"
+                  >Enter your Date of Birth</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-10">
+              <label for="city">City Residing:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="city"
+                name="city"
+                maxlength="11110"
+                ng-model="newReg.city"
+                ng-required="true"
+              />
+              <div ng-show="newForm.city.$touched && newForm.city.$invalid">
+                <small style="color: red; display: block; text-align: start"
+                  >Enter your City</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="pincode">Preferred Country for Higher Studies:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="pin"
+                name="pin"
+                maxlength="1111"
+                ng-model="newReg.pin"
+                ng-required="true"
+              />
+              <div ng-show="newForm.pin.$touched && newForm.pin.$invalid">
+                <small style="color: red; display: block; text-align: start"
+                  >Enter your Preferred country for Higher Studies</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="state">Preferred State for Higher Studies:</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="state"
+                name="state"
+                ng-model="newReg.state"
+                ng-required="true"
+              />
+            </div>
+            <div ng-show="newForm.state.$touched && newForm.state.$invalid">
+              <small style="color: red; display: block; text-align: start"
+                >Enter your Preffered state for Higher studies</small
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="qualification" required>Qualification:</label>
+            </div>
+            <div class="input-box">
+              <select name="qualification" id="qualification">
+                <option value=" ">Select Qualification:</option>
+                <option value="Graduation">Graduation</option>
+                <option value="BTech.">BTech.</option>
+                <option value="Medical.">Medical.</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Comm">B.Comm</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="higher" required>Intrested in Pursuing:</label>
+            </div>
+            <div class="input-box">
+              <select name="interest" id="interest">
+                <option value=" ">Select Interests:</option>
+                <option value="Medical Sciences">Medical Sciences</option>
+                <option value="M.Tech.">M.Tech</option>
+                <option value="Business.">Business.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-box">
+              <label for="city">Specialization :</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="spec"
+                name="spec"
+                maxlength="10000"
+                ng-model="newReg.spec"
+                ng-required="true"
+              />
+            </div>
+          </div>
+
+          <div class="n">
+            <input
+              type="submit"
+              value="Submit"
+              ng-disabled="newForm.$invalid"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!--
+    <div class="row">
+        <div class="col-10">
+          <label for="address">Address:</label>
+        </div>
+        <div class="input-box">
+          <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+-->
+
+<!--
+  <div class="row">
+        <div class="col-10">
+          <label for="specialization">Specialization:</label>
+        </div>
+        <div class="input-box">
+          <input
+            type="checkbox"
+            class="specialization"
+            id="cs"
+            name="specialization[]"
+            value="Computer Science"
+          />Computer Science<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="it"
+            name="specialization[]"
+            value="Information Technology"
+          />Information Technology<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="ca"
+            name="specialization[]"
+            value="Computer Architecture"
+          />Computer Architecture<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="tc"
+            name="specialization[]"
+            value="Tele Communication"
+          />Tele Communication<br />
+        </div>
+      </div>
+-->

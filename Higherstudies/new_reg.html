@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Registaration Form</title>
+    <link rel="shortcut icon" href="images/studyPortal.webp" />
+
+    <link rel="stylesheet" href="/responsiveRegistration.css" />
+    <script
+      type="text/javascript"
+      lang="javascript"
+      src="/responsiveRegistaration.js"
+    ></script>
+  </head>
+
+  <body>
+    <form action="thankyou.html" onsubmit="return SaveStudentDetails();">
+      <div class="container">
+        <h1>Fill in the form</h1>
+        <div class="row">
+          <div class="col-10">
+            <label for="fname">First Name:</label>
+          </div>
+          <div class="col-90">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Enter your first name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="lname">Last Name:</label>
+          </div>
+          <div class="col-90">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Enter your last name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col-90">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="it should contain @,."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="mobile">Mobile:</label>
+          </div>
+          <div class="col-90">
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="only 10 digits are allowed"
+              maxlength="10"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="gender" required>Gender:</label>
+          </div>
+          <div class="col-90">
+            <input type="radio" id="male" name="gender" value="male" />Male
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />Female
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="dob">Date Of Birth:</label>
+          </div>
+          <div class="col-90">
+            <input type="Date" id="dob" name="dob" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-10">
+            <label for="city">City Residing:</label>
+          </div>
+          <div class="col-90">
+            <input type="text" id="city" name="city" maxlength="11110" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="pincode">Preferred Country for Higher Studies:</label>
+          </div>
+          <div class="col-90">
+            <input type="text" id="pin" name="pin" maxlength="1111" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="state">Preferred State for Higher Studies:</label>
+          </div>
+          <div class="col-90">
+            <input type="text" id="state" name="state" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="qualification" required>Qualification:</label>
+          </div>
+          <div class="col-90">
+            <select name="qualification" id="qualification">
+              <option value=" ">Select Qualification:</option>
+              <option value="Graduation">Graduation</option>
+              <option value="BTech.">BTech.</option>
+              <option value="Medical.">Medical.</option>
+              <option value="BBA">BBA</option>
+              <option value="B.Comm">B.Comm</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <label for="higher" required>Intrested in Pursuing:</label>
+          </div>
+          <div class="col-90">
+            <select name="qualification" id="qualification">
+              <option value=" ">Select Interests:</option>
+              <option value="Medical Sciences">Medical Sciences</option>
+              <option value="M.Tech.">M.Tech</option>
+              <option value="Business.">Business.</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-10">
+            <label for="city">Specialization Preferred:</label>
+          </div>
+          <div class="col-90">
+            <input type="text" id="city" name="city" maxlength="10000" />
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+
+<!--
+    <div class="row">
+        <div class="col-10">
+          <label for="address">Address:</label>
+        </div>
+        <div class="col-90">
+          <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+-->
+
+<!--
+  <div class="row">
+        <div class="col-10">
+          <label for="specialization">Specialization:</label>
+        </div>
+        <div class="col-90">
+          <input
+            type="checkbox"
+            class="specialization"
+            id="cs"
+            name="specialization[]"
+            value="Computer Science"
+          />Computer Science<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="it"
+            name="specialization[]"
+            value="Information Technology"
+          />Information Technology<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="ca"
+            name="specialization[]"
+            value="Computer Architecture"
+          />Computer Architecture<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="tc"
+            name="specialization[]"
+            value="Tele Communication"
+          />Tele Communication<br />
+        </div>
+      </div>
+-->

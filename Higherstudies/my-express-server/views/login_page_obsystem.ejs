@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dbsm_css_r2.css" type="text/css" />
+    <script src="dbmsreview2_js.js"></script>
+    <title>Login page</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(
+        rgba(217, 177, 57, 0.7),
+        rgba(237, 75, 75, 0.7)
+      );
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+
+      background-color: #cdedfd;
+      background-image: linear-gradient(
+        319deg,
+        #cdedfd 0%,
+        #ffec82 37%,
+        #ffcfd2 100%
+      );
+
+      animation-name: background-change;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      animation-timing-function: ease-in-out;
+      background-size: 400%;
+      background-attachment: fixed;
+    }
+  </style>
+
+<script>  
+  function validateform(){  
+  var user=document.myform.user.value;  
+  var pass=document.myform.pass.value;  
+    
+  if (user==null || user==""){  
+    alert("Username can't be blank");  
+    return false;  
+  }else if(pass.length<6){  
+    alert("Password must be at least 6 characters long.");  
+    return false;  
+    }  
+  }  
+  </script>  
+  
+
+  <body>
+    <form name = "myform" class="box" action="new_reg.html"  autocomplete="off" onclick="return validateform()">
+      <h1>Login</h1>
+      <input
+        type="text"
+        name="user"
+        placeholder="Username"
+        id="login_user_name"
+      />
+      <div id="e_login_user_name" class="error"></div>
+      <input
+        type="password"
+        name="pass"
+        placeholder="Password"
+        id="loginpass"
+      />
+      <div id="e_loginpass" class="error"></div>
+      <input type="submit" name="" value="Login" />
+      <a
+        class="pass"
+        href="forgotpassword_obsystem.html"
+        style="
+          font-size: 18px;
+          color: rgb(224, 224, 231);
+          text-decoration: none;
+        "
+        >Forgot password?</a
+      >
+    </br>
+    </br>
+      <a class="reg" href="registration_form.html" style="
+      font-size: 18px;
+      color: rgb(224, 224, 231);
+      text-decoration: none;
+    ">Register</a>
+    </form>
+  </body>
+</html>

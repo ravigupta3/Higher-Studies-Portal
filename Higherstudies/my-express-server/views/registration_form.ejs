@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg_style.css" type="text/css">
+    <script src="ent  ire_js_file.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="images/studyPortal.webp">
+
+</head>
+<body>
+    <h1> STUDENT REGISTRATION FORM</h1>
+    <img src="nnn.png" height="300px"style="float: right;">
+    <div>
+    <form  method="POST" id="registration" action="/reg" ><div class="registration" ng-app="" >
+        <div class="title"> Registration</div>
+        <div class="content">
+            <form name="regForm"  action="#" ng-submit="sendMessage()" novalidate>
+              <div class="user-details">
+                <div class="input-box"  >
+                    <span class="details">Full Name</span><input id="fullname" type="text" class="Full name" name="fname" placeholder="Enter your name" ng-model="registration.name" ng-required="true"/>
+                    <div ng-show="regForm.fname.$touched && regForm.fname.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter a valid name</small>
+                    </div>
+                
+                    <div id="e_name"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Username</span><input id="uname" type="text" name="username" placeholder="Enter your username" ng-model="registration.uname" ng-required="true"/>
+                    <div ng-show="regForm.username.$touched && regForm.username.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter a valid Username</small>
+                    </div>
+                    <div id="e_uname"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span><input id="uemail" type="email" name="email" placeholder="xyz@gmail.com" ng-model="registration.email" ng-required="true"/>
+                    
+                    <div ng-show="regForm.email.$touched && regForm.email.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter a valid Email ID</small>
+                    </div><div id="e_uemail"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span><input id="unumber" type="number" name="phoneno" placeholder="Enter your number" ng-model="registration.number" ng-required="true"/>
+                    <div ng-show="regForm.phoneno.$touched && regForm.phoneno.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter a valid Phone number</small>
+                    </div>
+                    <div id="e_unumber"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Father Name</span><input type="text" name="faname" id="ufname" class="Father Name" placeholder="Enter your Father name" ng-model="registration.fname" ng-required="true"/>
+                    <div ng-show="regForm.faname.$touched && regForm.faname.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter Father name</small>
+                    </div>
+                    <div id="e_ufname"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mother Name</span><input type="text" name="mname" id="umname" class="Mother Name" placeholder="Enter your Mother name" ng-model="registration.mname" ng-required="true"/>
+                    <div ng-show="regForm.mname.$touched && regForm.mname.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter Mother name</small>
+                    </div>
+                    <div id="e_umname"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last studied School</span><input type="text" id="lastschool" name="school" placeholder="Enter your last studied school" ng-model="registration.school" ng-required="true"/>
+                    <div ng-show="regForm.school.$touched && regForm.school.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter Last studied School</small>
+                    </div>
+                    <div id="e_lastschool"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last studied College</span><input type="text" name="college" id="lastclg" placeholder="Enter your last studied college" ng-model="registration.college" ng-required="true"/>
+                    <div ng-show="regForm.college.$touched && regForm.college.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter Last studied College</small>
+                    </div>
+                    <div id="e_lastclg"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Bachelor's Degree</span><input type="text" name="bac" id="lastclg" placeholder="Enter your Bacherlor's degree" ng-model="registration.bac" ng-required="true"/>
+                    <div ng-show="regForm.bac.$touched && regForm.bac.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter Bacherlor's Degree</small>
+                    </div>
+                    <div id="e_lastclg"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">CGPA</span><input type="text" name="cgpa" id="lastclg" placeholder="Enter your CGPA" ng-model="registration.cgpa" ng-required="true"/>
+                    <div ng-show="regForm.cgpa.$touched && regForm.cgpa.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter your CGPA</small>
+                    </div>
+                    <div id="e_lastclg"></div></br>
+                </div>
+                <div class="input-box">
+                  <span class="details">SELECT COURSE YOU WISH TO PURSUE</span><select name="category" size="1" id="selectbox" />
+                    <option value=>SELECT BRANCH
+                        <option value=>Medical Sciences
+                            <option value=>M.Tech
+                              <option value=>MBA
+                                
+                    </option></select>
+                    
+                </div>
+                <div class="input-box">
+                    <span class="details">Address</span><input type="text" name="Address" id="address"  placeholder="Enter your Address" ng-model="registration.address" ng-required="true"/>
+                    <div ng-show="regForm.Address.$touched && regForm.Address.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter your Address</small>
+                    </div>
+                    <div id="e_address"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span><input type="password" id="pass" name="password" placeholder="Enter your password" ng-model="registration.password" ng-required="true"/>
+                    <div ng-show="regForm.password.$touched && regForm.password.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Enter Password</small>
+                    </div>
+                    <div id="e_pass"></div></br>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span><input type="password" id="cpass" name="confirmpassword" placeholder="Confirm your password" ng-model="registration.cpassword" ng-required="true"/>
+                    <div ng-show="regForm.confirmpassword.$touched && regForm.confirmpassword.$invalid">
+                        <small style="color: red; display: block; text-align: center;">Please confirm you password</small>
+                    </div>
+                    <div id="e_cpass"></div></br>
+                </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span> 
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label> </br>
+                    <div id="e_radio"></div></br>
+                </div>
+                </div>
+                <div class="button">
+                    <input type="reset" value="Reset Page">
+                </div>
+                <div class="button">
+                    <input type="submit"  value="Register" ng-disabled="regForm.$invalid">
+                </div>
+                <a href="login_page.html" style="font-size: 18px;color: blue;text-decoration: none;">After Registering and submitted, click here for Login</a>
+            </form>
+        </div>
+        </div>
+    </div>
+</form>
+    
+    
+</body>
+</html>

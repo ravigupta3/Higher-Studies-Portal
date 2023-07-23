@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg_style.css" type="text/css">
+    <script src="entire_js_file.js"></script>
+    <title>Login page</title>
+    <link rel="shortcut icon" href="images/studyPortal.webp">
+
+    
+</head>
+<style>
+    body{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/loginpagepic_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+</style>
+<body>
+    <form class="box" action="new_reg.html"  onsubmit="return loginpage();" >
+        <h1>Login</h1>
+        <input type="text" name="" placeholder="Username" id="login_user_name"> 
+        <div id="e_login_user_name" class="error"></div>
+    </br>
+        <input type="password" name="" placeholder="Password" id="loginpass">
+        <div id="e_loginpass" class="error"></div>
+    </br>
+        <input type="submit" name="" value="Login">
+        <a href="registration_form.html" style="font-size: 18px;color: blue;">Register?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="forgot_password.html" style="font-size: 18px;color: blue;">Forgot password?</a>
+    </form>
+</body>
+</html>

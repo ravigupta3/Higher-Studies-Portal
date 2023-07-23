@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg_style.css" type="text/css">
+    <script src="entire_js_file.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>Login page</title>
+    <link rel="shortcut icon" href="images/studyPortal.webp">
+
+    
+</head>
+<style>
+    body{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/loginpagepic_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+</style>
+<body>
+
+    <div class ="div" ng-app="">
+        <form class="box" action="new_reg.html" name="box"  novalidate>
+            <h1>Login</h1>
+            <input type="text" name="username" placeholder="Username" id="login_user_name" ng-model="div.username" required="true"/> 
+            <div ng-show="box.username.$touched && box.username.$invalid">
+                <small style="color: red; display: block; text-align: center;">Enter username</small>
+            </div>
+            <div id="e_login_user_name" class="error"></div>
+        </br>
+            <input type="password" name="pass" placeholder="Password" id="loginpass" ng-model="div.pass" required="true">
+            <div ng-show="box.pass.$touched && box.pass.$invalid">
+                <small style="color: red; display: block; text-align: center;">Enter password</small>
+            </div>
+            <div id="e_loginpass" class="error"></div>
+        </br>
+        <div class="i">
+            <input  type="submit" name="" value="Login" ng-disabled="box.$invalid">
+            <a href="registration_form.html" style="font-size: 18px;color: blue;">Register?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="forgot_password.html" style="font-size: 18px;color: blue;">Forgot password?</a>
+
+        </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

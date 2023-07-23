@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+	<CD>
+		<TITLE>Baltimore, USA</TITLE>
+		<ARTIST>UMBC</ARTIST>
+		<YEAR>1985</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Virginia,USA</TITLE>
+		<ARTIST>GMU</ARTIST>
+		<YEAR>1988</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Texas,USA</TITLE>
+		<ARTIST>UTD</ARTIST>
+		<YEAR>1982</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Tamil Nadu, India</TITLE>
+		<ARTIST>Amrita</ARTIST>
+		<YEAR>1990</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Boston</TITLE>
+        <ARTIST>Harvard</ARTIST>
+		<YEAR>1997</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Atlanta,USA</TITLE>
+		<ARTIST>GSU</ARTIST>
+		<YEAR>1998</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Houston,USA</TITLE>
+		<ARTIST>University of Houston</ARTIST>
+		<YEAR>1973</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Tamil Nadu, India</TITLE>
+		<ARTIST>VIT</ARTIST>
+		<YEAR>1990</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Chicago</TITLE>
+		<ARTIST>UIC</ARTIST>
+		<YEAR>1996</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Iowa City,USA</TITLE>
+		<ARTIST>IOWA</ARTIST>
+		<YEAR>1987</YEAR>
+	</CD>
+</CATALOG>
